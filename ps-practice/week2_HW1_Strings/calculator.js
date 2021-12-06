@@ -1,7 +1,6 @@
+// Problem 4
 var prompt = require("prompt-sync")();
-// Make a calculator using switch/case and take a user input to perform any calculation. If user enters any value other than 1-5, display a message 'Invalid Option' and end the program.
 
-// console.log("Pick an operator using a number")
 console.log("1 = Add\n2 = Subtract\n3 = Multiply\n4 = Divide\n5 = Exit");
 let operator = Number(
   prompt("Pick an operator from the menu above using a number: ")

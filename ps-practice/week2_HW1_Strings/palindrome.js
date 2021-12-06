@@ -1,4 +1,4 @@
-
+// Problem 1
 let prompt = require("prompt-sync")();
 
 let str = String(prompt("Check for palindrome: "));

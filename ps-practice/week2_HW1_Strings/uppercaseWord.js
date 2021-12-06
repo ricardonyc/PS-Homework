@@ -1,8 +1,5 @@
+// Bonus
 var prompt = require("prompt-sync")();
-// take string
-// split string
-// capitalize each word using splice or slice
-// join the words back together
 
 const string = String(prompt("Enter a string: "));
 const words = string.split(" ");

@@ -1,4 +1,4 @@
-// Write a program to find how many times a user entered word occurs in given string
+// Problem 3
 var prompt = require('prompt-sync')();
 
 let string = String(prompt("Enter a paragraph or sentence: "))

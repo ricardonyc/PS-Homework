@@ -1,25 +1,23 @@
-// write a program to find how many letters, numbers and special characters are in a user entered String
-// check for letters
-// check for numbers
-// check for special characters
-// creater a counter for letters, numbers, and special characters
-// use if else
-// else will be for symbols
+// Problem 2
 var prompt = require("prompt-sync")();
 
-// let string = prompt("Enter a string: ");
-// // let stringArray = string.split("");
-// let nums = 0;
-// let chars = 0;
-// let special = 0;
-
-// for (let i = 0; i < string.length; i++) {
-  
-// }
-
-// console.log(
-//   `There are ${nums} numbers, ${chars} letters, and ${special} special characters.`
-// );
-
-let test = 'hello'
-console.log(typeof test.charCodeAt(1) === "string")
+let string = String(prompt("Enter a string: "));
+let lowerString = string.toLowerCase();
+let chars = 0;
+let nums = 0;
+let special = 0;
+for (let i = lowerString.length-1; i >= 0; i--) {
+  if (
+    lowerString.charCodeAt(i) >= 97 &&
+    lowerString.charCodeAt(i) <= 122
+  ) {
+    chars++;
+  } else if (string.charCodeAt(i) >= 48 && string.charCodeAt(i) <= 57) {
+    nums++;
+  } else {
+    special++;
+  }
+}
+console.log(
+  `There are ${chars} letters, ${nums} numbers, and ${special} special characters in your string.`
+);

@@ -61,4 +61,8 @@ let games = parseInt(prompt("How many times would you like to play?: "));
 while (games < 1 || isNaN(games) === true) {
   games = parseInt(prompt("Please enter a number greater than or equal to 1: "));
 }
-console.log(games)
+
+while(games > 0){
+    console.log(games)
+    games--
+}

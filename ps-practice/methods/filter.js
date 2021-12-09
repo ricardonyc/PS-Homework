@@ -14,3 +14,5 @@ console.log(odd([1, 2, 5, 6, 7, 10, 17]));
 // by 6
 const six = (array) => array.filter((x) => x % 6 === 0)
 console.log(six([42, 55, 27, 144, 180, 4, 258, 99, 117, 156]))
+
+// this is a new message to see if the git pull works

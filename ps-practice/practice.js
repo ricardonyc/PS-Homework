@@ -1,12 +1,22 @@
+  const capitalize = (string) => {
+    return string
+      .split("")
+      .map((x) => x.toUpperCase())
+      .join("")
+  }
+
+  
   // Exercise# 4
-  // Now write a new function called swapCase that takes a string of words and uses .map and your newly written capitalize() 
+  // Now write a new function called swapCase that takes a string of words and uses .map and your newly written capitalize() function
   // function to return a string where every other word is in all caps. 
   // Hint: look up Array.prototype.map on MDN and see what arguments the .map callback can take. 
   // ex: swapCase('hey everyone, lets study together saturday') // => "HEY everyone, LETS study TOGETHER saturday"
   let swapCase = function(string){
-    // Codeeeee
+    return string.split(" ").map((x, index) => index % 2 === 0 ? capitalize(x) : x)
   }
   
+console.log(swapCase("hello how are you sir man chicken"))
+
   
   //Exercise #5
   // Write a function shiftLetters that takes a string and uses .map to return an encoded string with each letter shifted down the 
@@ -17,7 +27,7 @@
   const shiftLetters = function(string){
     // code!
   }
-  
+
   //Bonus 
   //using the .filter(), filter out the Full Stack residents 
   

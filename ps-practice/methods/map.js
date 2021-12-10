@@ -10,32 +10,25 @@ const getSquares = (array) => {
 
 // console.log(getSquares([1, 2, 3, 4, 5]));
 
-
-
 // Exercise #3
 // Write a function capitalize that takes a string and uses .map to return the same string in all caps.
 // ex. capitalize('whoop') // => 'WHOOP'
 // ex. capitalize('iced tea') // => "ICED TEA"
 const capitalize = (string) => {
-    return string.split("").map((x) => x.toUpperCase()).join("")
-
+  return string
+    .split("")
+    .map((x) => x.toUpperCase())
+    .join("");
 };
 
-// console.log(capitalize('chicken'))
 
+// Exercise# 4
+// Now write a new function called swapCase that takes a string of words and uses .map and your newly written capitalize()
+// function to return a string where every other word is in all caps.
+// Hint: look up Array.prototype.map on MDN and see what arguments the .map callback can take.
+// ex: swapCase('hey everyone, lets study together saturday') // => "HEY everyone, LETS study TOGETHER saturday"
+let swapCase = function(string){
+  return string.split(" ").map((x, index) => index % 2 === 0 ? capitalize(x) : x)
+};
 
-  // Exercise# 4
-  // Now write a new function called swapCase that takes a string of words and uses .map and your newly written capitalize() 
-  // function to return a string where every other word is in all caps. 
-  // Hint: look up Array.prototype.map on MDN and see what arguments the .map callback can take. 
-  // ex: swapCase('hey everyone, lets study together saturday') // => "HEY everyone, LETS study TOGETHER saturday"
-  let swapCase = function(string){
-    
-  }
-
-  // function takes string of words
-  // use .map and the capitalize function
-  
-  // every other word is in all caps
-  // every other word gets capitalize called on it
-
+console.log(swapCase("hello world how are you sir today"));

@@ -32,3 +32,4 @@ let swapCase = function(string){
 };
 
 console.log(swapCase("hello world how are you sir today"));
+// capitalizes every other word
